@@ -1,0 +1,1004 @@
+===============================================================================
+=    B e m - v i n d o  ao  t u t o r i a l  do  V I M  -  Vers�o 1.8 pt_BR   =
+===============================================================================
+
+     Vim � um poderoso editor que possui muitos comandos, tantos que seria
+     imposs�vel ensin�-los num tutorial como este, que � concebido para
+     apresentar os comandos suficientes para permiti-lo usar facilmente o
+     Vim como um editor de textos gen�rico.
+
+     O tempo necess�rio para completar o tutorial � de cerca de 25-30 minutos,
+     dependendo de quanto tempo � gasto praticando os comandos.
+
+     ATEN��O:
+     Os comandos nas li��es modificam este texto. Fa�a uma c�pia deste
+     arquivo para praticar os comandos (se usou o "vimtutor", esta j�
+     � uma c�pia).
+
+     � importante lembrar que este tutorial � concebido para ensinar pela
+     pr�tica. Isso significa que voc� precisa executar os comandos para 
+     aprend�-los adequadamente. Se voc� somente ler o texto, esquecer� os
+     comandos!
+
+     Agora, certifique-se de que sua tecla Shift-Lock (ou Caps Lock) n�o esteja
+     ativada e pressione a tecla  j  o bastante para mover o cursor at� que a
+     Li��o 1.1 apare�a inteiramente na tela.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			 Li��o 1.1:  MOVER O CURSOR
+
+
+  ** Para mover o cursor, pressione as teclas h,j,k,l conforme indicado. **
+             ^
+             k          Dica: A tecla h est� � esquerda e move � esquerda.
+       < h       l >          A tecla l est� � direita e move � direita.
+             j                A tecla j se parece com uma seta para baixo.
+             v
+  1. Mova o cursor pela tela at� que voc� se sinta confort�vel.
+
+  2. Segure pressionada a tecla (j) at� haver repeti��o.
+     Agora voc� j� sabe como ir para a pr�xima li��o.
+
+  3. Usando a tecla j, v� para a Li��o 1.2.
+
+NOTA: Se est� inseguro sobre o que digitou, pressione <ESC> para 
+      coloc�-lo no modo Normal. Ent�o redigite o comando que queria.
+
+NOTA: As teclas de cursor funcionam tamb�m. Mas usando hjkl, t�o logo
+      esteja acostumado, voc� poder� se mover muito mais rapidamente.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			   Li��o 1.2: SAIR DO VIM
+
+
+ !! NOTA: Antes de executar quaisquer dos passos abaixo, leia a li��o inteira !!
+
+  1. Pressione <ESC> (para ter certeza de que est� no modo Normal).
+
+  2. Digite:    :q! <ENTER>.
+     Assim, sai do editor SEM salvar qualquer mudan�a feita.
+
+  3. Repita o procedimento que o trouxe a este tutorial. O procedimento pode
+     ter sido a digita��o de:  vimtutor <ENTER>.
+
+  4. Se memorizou estes passos e est� confiante, execute os passos de
+     1 a 3 para sair e reentrar no editor.
+
+NOTA:  :q! <ENTER>  descarta qualquer mudan�a. Em uma pr�xima li��o ser�
+       ensinado como salvar as mudan�as feitas em um arquivo.
+
+  5. Des�a o cursor at� a Li��o 1.3.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		     Li��o 1.3: EDITAR TEXTOS - REMO��O
+
+  ** Pressione  x  para deletar o caractere sob o cursor. **
+
+
+  1. Mova o cursor para a linha abaixo marcada com --->.
+
+  2. Para corrigir os erros, mova o cursor at� que ele esteja sobre o 
+     caractere a ser deletado.
+
+  3. Pressione a tecla  x  para remover o caractere incorreto.
+
+  4. Repita os passos 2 at� 4 at� que a frase esteja correta.
+
+---> A vvaca pullouu por ccimaa dda luuua.
+
+  5. Agora que a frase est� correta, prossiga para a Li��o 1.4.
+
+NOTA: Enquanto segue este tutorial, n�o tente memorizar, aprenda pelo uso.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		    Li��o 1.4: EDITAR TEXTOS - INSER��O
+
+		   ** Pressione  i  para inserir texto. **
+
+
+  1. Mova o cursor at� a primeira linha abaixo marcada com --->.
+
+  2. Para deixar a primeira linha igual � segunda, mova o cursor para
+     o primeiro caractere DEPOIS de onde o texto dever� ser inserido.
+
+  3. Pressione  i  e digite as adi��es necess�rias.
+
+  4. Assim que cada erro for corrigido pressione <ESC> para retornar ao modo
+     Normal. Repita os passos 2 at� 4 para corrigir a frase.
+
+---> Tem text fatado nesta .
+---> Tem algum texto faltando nesta linha.
+
+  5. Quando se sentir � vontade com a inser��o de texto, mova o cursor para
+     a Li��o 1.5.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		   Li��o 1.5: EDITAR TEXTO - ADICIONAR
+
+		  ** Pressione  A  para adicionar texto. **
+
+  1. Mova o cursor para a primeira linha abaixo marcada com --->.
+     N�o importa sobre qual caractere o cursor estar� na linha.
+
+  2. Pressione  A  e digite as adi��es necess�rias.
+
+  3. Quando adicionar o texto, pressione <ESC> para retornar ao modo Normal.
+
+  4. Mova o cursor para a segunda linha marcada ---> e repita os passos 2 e 3
+     para corrigir a frase.
+
+---> H� algum texto faltando nes
+     H� algum texto faltando nesta linha.
+---> H� algum texto faltan
+     H� algum texto faltando aqui.
+
+  5. Quando se sentir confort�vel adicionando texto, v� para a Li��o 1.6.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Li��o 1.6: EDITAR UM ARQUIVO
+
+		** Use  :wq  para salvar um arquivo e sair. **
+
+  !! NOTA: Leia toda a li��o antes de executar as instru��es!!
+
+  1. Saia deste tutorial como o fez na li��o 1.2:  :q!
+     Ou, se tiver acesso a outro terminal, fa�a o seguinte nele.
+
+  2. No prompt do shell, digite esse comando:  vim tutor <ENTER>
+     'vim' � o comando para iniciar o editor Vim e 'tutor' � o nome do
+     arquivo que voc� quer editar.  Use um arquivo que possa ser modificado.
+
+  3. Insira e apague texto tal como aprendeu nas li��es anteriores.
+
+  4. Salve o arquivo com as mudan�as e saia do Vim com:  :wq <ENTER>
+
+  5. Se tiver sa�do do vimtutor no passo 1, reinicie o vimtutor e v� para
+     o resumo seguinte.
+
+  6. Ap�s ler os passos acima e compreend�-los, execute-os.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 1
+
+  1. O cursor � movido usando tanto as teclas de seta quanto as teclas hjkl.
+	h (esquerda)	j (para baixo)	k (para cima)	l (direita)
+
+  2. Para entrar no Vim a partir de um shell digite: vim NOMEDOARQUIVO <ENTER>
+
+  3. Para sair do Vim digite:  <ESC> :q! <ENTER> para descartar as altera��es.
+                   OU digite:  <ESC> :wq <ENTER> para salvar as altera��es.
+
+  4. Para deletar um caractere sob o cursor no modo Normal digite:  x
+
+  5. Para inserir texto na posi��o do cursor enquanto estiver no modo Normal
+     digite:
+             i     digite o texto <ESC>   inserir depois do cursor
+	     A     digite o texto <ESC>   adicionar no final da linha
+
+NOTA: Pressionando <ESC> voc� ir� para o modo Normal ou cancelar� um comando
+      ainda incompleto.
+
+Agora continue com a Li��o 2.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Li��o 2.1: COMANDOS DE REMO��O 
+
+	          ** Digite  dw  para apagar uma palavra. **
+
+
+  1. Pressione  <ESC>  para ter certeza de que est� no modo Normal.
+
+  2. Mova o cursor at� a linha abaixo marcada com --->.
+
+  3. Mova o cursor at� o come�o da palavra que precisa ser deletada.
+
+  4. Digite  dw  para fazer a palavra desaparecer.
+
+  NOTA: A letra  d  vai aparecer na �ltima linha da tela enquanto voc� a
+	digita. O Vim o est� esperando digitar um  w . Se digitou
+	alguma coisa errada, pressione <ESC> e comece de novo.
+
+---> Tem a algumas oi palavras divers�o que n�o pertencem papel a esta frase.
+
+  5. Repita os passos 3 ao 4 at� que a frase esteja correta e v� para a
+     Li��o 2.2.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Li��o 2.2: MAIS COMANDOS DE REMO��O
+
+             ** Digite  d$  para deletar at� o fim da linha. **
+
+
+
+  1. Pressione <ESC> para ter certeza de estar no modo Normal.
+
+  2. Mova o cursor at� a linha abaixo marcada com --->.
+
+  3. Mova o cursor at� o fim da linha correta (DEPOIS do primeiro  . ).
+
+  4. Digite  d$  para apagar at� o fim da linha.
+
+---> Algu�m digitou o fim desta linha duas vezes. desta linha duas vezes.
+
+  5. V� para a li��o 2.3 para entender o funcionamento deste comando.
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		   Li��o 2.3: SOBRE OPERADORES E MOVIMENTOS 
+
+  Muitos comandos que mudam texto s�o feitos de um operador e de um movimento.
+  O formato para um comando apagar com o operador de remo��o  d  tem a
+  seguinte forma:
+
+         d   movimento
+
+  Onde:
+    d - � o operador apagar.
+    movimento - � o movimento sobre o qual o operador age (listado abaixo).
+
+  Uma pequena lista de teclas de movimento:
+    w - at� o in�cio da pr�xima palavra, excluindo seu primeiro caractere.
+    e - at� o fim da palavra atual, incluindo seu �ltimo caractere.
+    $ - at� o fim da linha, incluindo seu �ltimo caractere.
+
+  Portanto, digitar  de  apaga do cursor ao fim da palavra.
+
+NOTA: Pressionar apenas a tecla de movimento em modo Normal, sem o
+operador, faz o cursor se mover como especificado na lista de teclas de
+movimento.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	       Li��o 2.4: USAR UM CONTADOR PARA UM MOVIMENTO
+
+   ** Digitar um n�mero antes de um movimento repete-o o tanto de vezes. **
+
+
+   1. Mova o cursor para o come�o da linha marcada com ---> abaixo.
+
+   2. Digite  2w  para mover o cursor duas palavras adiante.
+
+   3. Digite  3e  para mover o cursor para o fim da terceira palavra adiante.
+
+   4. Digite  0  (zero) para mover para o in�cio da linha.
+
+   5. Repita os passos 2 e 3 com diferentes n�meros.
+
+---> Esta � uma linha com algumas palavras para permiti-lo fazer movimentos.
+
+   6. V� para a Li��o 2.5.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	       Li��o 2.5: USAR UM CONTADOR PARA APAGAR MAIS
+
+   ** Digitar um n�mero com um operador repete-o esse n�mero de vezes. **
+
+
+   Voc� deve inserir um contador entre o operador de remo��o e o de movimento
+   mencionados acima para apagar mais:
+       d   n�mero   movimento
+
+   1. Movimente o cursor para a primeira palavra em LETRAS MAI�SCULAS na
+      linha marcada com --->.
+
+   2. Digite  d2w  para deletar as duas palavras em LETRAS MAI�SCULAS.
+
+   3. Repita os passos 1 e 2 com diferentes contadores para deletar as
+      palavras em LETRAS MAI�SCULAS com um comando.
+
+--->  esta ABC DE linha FGHI JK LMN OP de palavras est� Q RS TUV limpa.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		       Li��o 2.6: TRABALHAR COM LINHAS
+
+	      ** Digite  dd  para apagar uma linha inteira. **
+
+  Em virtude da frequ�ncia em deletar uma linha inteira, os desenvolvedores 
+  do Vi decidiram que seria mais simples digitar dois d para apagar uma linha.
+
+  1. Mova o cursor at� a segunda linha da frase abaixo.
+  2. Digite  dd  para apagar a linha.
+  3. Agora mova at� a quarta linha.
+  4. Digite  2dd  para apagar duas linhas.
+
+--->  1)  Rosas s�o vermelhas,
+--->  2)  Lama � divertida,
+--->  3)  Violetas s�o azuis,
+--->  4)  Eu tenho um carro,
+--->  5)  Rel�gios dizem as horas,
+--->  6)  A��car � doce,
+--->  7)  Assim como voc�.
+
+Notas do tradutor: Lama (mud) em ingl�s pode significar fofoca, difama��o.
+                   H� rima no texto original.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		     Li��o 2.7: O COMANDO UNDO (DESFAZER)
+
+** Pressione u para desfazer os �ltimos comandos, U recupera a linha inteira.**
+
+
+  1. Mova o cursor para a linha abaixo marcada com ---> e posicione-o sobre o
+     primeiro erro.
+  2. Digite  x  para deletar o primeiro caractere errado.
+  3. Agora, digite  u  para desfazer o �ltimo comando executado.
+  4. Desta vez, corrija todos os erros na linha usando o comando  x .
+  5. Agora, digite um U mai�sculo para retornar a linha ao seu estado original.
+  6. Digite  u  algumas vezes para desfazer o  U  e os comandos anteriores.
+  7. Digite CTRL-R (segurando a tecla CTRL enquanto digita R) algumas vezes
+     para refazer os comandos (desfazer os undos).
+
+---> Corriija os erros nnesta linha e reetorne-os com undo.
+
+  8. Esses comandos s�o muito �teis. Agora v� para o resumo da Li��o 2.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 2
+
+
+  1. Para apagar do cursor at� a pr�xima palavra, digite:   dw
+  2. Para apagar do cursor at� o fim de uma linha, digite:  d$
+  3. Para apagar uma linha inteira, digite:   dd
+  4. Para repetir um movimento, adicione antes um n�mero:   2w
+  5. O formato para um comando no modo Normal �:
+           operador   [n�mero]   movimento
+   onde:
+      operador  - � o que ser� feito, como  d  para apagar
+      [n�mero]  - quantas vezes o comando ser� repetido
+      movimento - movimento sobre o texto que receber� a opera��o, como
+                  w (palavra), $ (at� o fim da linha), etc.
+
+  6. Para ir ao in�cio da linha, use um zero:  0
+
+  7. Para desfazer uma a��o anterior, digite:                  u (min�sculo)
+     Para desfazer todas as altera��es em uma linha, digite:   U (mai�sculo)
+     Para desfazer o que foi desfeito, digite:                 CTRL-R
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Li��o 3.1: O COMANDO COLAR
+
+	** Digite  p  para colar ap�s o cursor o que acabou de apagar. **
+
+
+  1. Mova o cursor at� a primeira linha marcada com --->.
+
+  2. Digite  dd  para apagar a linha e guard�-la num registro do Vim.
+
+  3. Mova o cursor at� a linha c) ACIMA de onde a linha apagada deveria estar.
+
+  4. No modo Normal, digite  p  para inserir a linha.
+
+  5. Repita os passos 2 ao 4 para p�r todas as linhas na ordem correta.
+
+---> d) Voc� pode aprender tamb�m?
+---> b) Violetas s�o azuis,
+---> c) Intelig�ncia se aprende,
+---> a) Rosas s�o vermelhas,
+
+Nota do tradutor: H� rima no original.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	               Li��o 3.2: O COMANDO SUBSTITUIR
+
+     ** Digite  rx  para substituir o caractere sob o cursor por  x . ** 
+
+
+  1. Mova o cursor at� a primeira linha abaixo marcada com --->.
+
+  2. Mova o cursor at� que esteja sobre o primeiro erro.
+
+  3. Digite  r  e ent�o o caractere que deveria estar l�.
+
+  4. Repita os passos 2 e 3 at� que a primeira linha esteja igual � segunda.
+
+---> Quendo este limha foi dugitada, alguem pressioniu algumas teclas erradzs!
+---> Quando esta linha foi digitada, algu�m pressionou algumas teclas erradas!
+
+  5. Agora v� para a Li��o 3.3.
+
+NOTA: Lembre-se que voc� deve aprender pelo uso, n�o pela memoriza��o.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		     Li��o 3.3: O OPERADOR CHANGE (MUDAR)
+
+	** Para alterar at� o fim de uma palavra, digite  ce . **
+
+
+  1. Mova o cursor at� a primeira linha abaixo marcada com --->.
+  
+  2. Posicione o cursor sobre o u em lunba.
+
+  3. Digite  ce  e a palavra correta (nesse caso, digite 'inha'.)
+
+  4. Pressione <ESC> e mova para o pr�ximo caractere a ser alterado.
+
+  5. Repita os passos 3 e 4 at� que a primeira frase esteja igual � segunda.
+
+---> Essa lunba tem pwlesmfr que ocrimmm  soi alteradas cup o comando change.
+---> Essa linha tem palavras que precisam ser alteradas com o comando change. 
+
+Note que  ce  n�o somente substitui a palavra, mas tamb�m o coloca no modo
+de Inser��o.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		      Li��o 3.4: MAIS MUDAN�AS USANDO c
+
+     ** O operador change � usado com os mesmos movimentos que o delete. **
+
+
+  1. O operador change trabalha da mesma maneira que o delete. O formato �:
+
+          c    [n�mero]    movimento
+
+  2. Os movimentos tamb�m s�o os mesmos: w (palavra) e $ (fim da linha).
+
+  3. Mova at� a primeira linha abaixo marcada com --->.
+
+  4. Mova o cursor at� o primeiro erro.
+
+  5. Digite  c$  e digite o resto da segunda para torn�-las iguais e 
+     pressione  <ESC>.
+
+---> O fim desta linha precisa de ajuda para ficar igual � segunda.
+---> O fim desta linha precisa ser corrigido usando o comando  c$.
+
+NOTA: Voc� pode usar a tecla Backspace para corrigir erros enquanto digita.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 3
+
+
+  1. Para reinserir um texto que j� foi apagado, digite  p . Isso coloca o texto
+     deletado AP�S o cursor (se uma linha � deletada ela ser� inserida na linha
+     abaixo do cursor).
+
+  2. Para substituir o caractere sob o cursor, digite  r  e ent�o o caractere
+     que substituir� o original.
+
+  3. O comando change possibilita mudar do cursor at� onde o movimento for.
+     Ex: Digite  ce  para mudar do cursor at� o fim de uma palavra, c$ para
+     mudar at� o fim da linha.
+
+  4. O formato para uma opera��o change �:
+
+         c   [n�mero]   movimento
+
+Agora v� para a pr�xima li��o.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	     Li��o 4.1: LOCALIZA��O DO CURSOR E ESTADO DO ARQUIVO
+
+    ** Digite CTRL-G para mostrar sua localiza��o no arquivo e seu estado.
+       Digite  G  para mover para uma linha do arquivo.  **
+
+  Nota: Leia esta li��o inteira antes de executar qualquer um dos passos!!
+
+  1. Segure pressionada a tecla Ctrl e pressione  g . Chamamos isso de
+     CTRL-G. Uma mensagem aparecer� no rodap� da p�gina com o nome do arquivo
+     e a sua posi��o no arquivo. Lembre-se do n�mero da linha para o Passo 3.
+
+NOTA:  A posi��o do cursor pode estar vis�vel no canto direito inferior da
+       tela. Isso acontece quando a op��o 'ruler' est� ativa
+       (veja  :help 'ruler' ).
+
+  2. Pressione  G  para se mover at� o fim do arquivo.
+     Digite  gg  para se mover at� o in�cio do arquivo.
+
+  3. Digite o n�mero da linha em que estava e ent�o G . Assim o cursor retornar�
+     � linha em que estava quando pressionou CTRL-G.
+
+  4. Se estiver seguro para faz�-los, execute os passos 1 a 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       Li��o 4.2: O COMANDO BUSCAR
+
+      ** Digite  /  seguido por uma frase para procurar por ela. **
+
+  1. No modo Normal digite o caractere  / . Note que ele e o cursor aparecem
+     no rodap� da tela, como ocorre com o comando  : .
+
+  2. Agora digite 'errroo' <ENTER>. Esta � a palavra que quer procurar.
+
+  3. Para buscar a mesma palavra de novo, simplesmente tecle  n .
+     Para buscar a mesma palavra na dire��o oposta, tecle  N .
+
+  4. Se quer procurar por uma frase de tr�s para frente, use  ?  em vez de  /  .
+
+  5. Para voltar aonde estava, pressione CTRL-O (mantenha a tecla Ctrl
+     pressionada e pressione a tecla o). Repita para voltar a outras posi��es.
+     CTRL-I segue para posi��es mais recentes.
+
+--->  "errroo" n�o � uma maneira de escrever erro;  errroo � um erro.
+
+NOTA: Quando a busca atinge o fim do arquivo ela continuar� do come�o, a
+      menos que a op��o 'wrapscan' esteja desativada.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	        Li��o 4.3: BUSCA DE PAR�NTESES CORRESPONDENTES
+
+         ** Digite  %  para encontrar um ),], ou } correspondente. **
+
+
+  1. Posicione o cursor em qualquer (, [, ou { na linha abaixo marcada com --->.
+  
+  2. Agora digite o caractere  % .
+  
+  3. O cursor deve estar no par�ntese ou colchete que casa com o primeiro.
+
+  4. Digite  %  para mover o cursor de volta ao primeiro colchete ou par�ntese
+     (por casamento).
+
+---> Isto ( � uma linha de teste contendo (, [ ] e { }. ))
+
+Nota: Isso � muito �til para corrigir um programa com par�ntese n�o-casado!
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		       Li��o 4.4: O COMANDO SUBSTITUIR
+
+      ** Digite  :s/velho/novo/g  para substituir 'velho' por 'novo'. **
+
+
+  1. Mova o cursor para a linha abaixo marcada com --->.
+
+  2. Digite  :s/aa/a <ENTER> . Note que este comando somente muda a 
+     primeira ocorr�ncia na linha.
+
+  3. Agora digite  :s/aa/a/g   significando substituir globalmente na linha.
+     Isto muda todas as ocorr�ncias na linha.
+
+---> aa melhor �poca para ver aas flores � aa primavera. 
+
+  4. Para mudar toda ocorr�ncia de uma string entre duas linhas,
+     digite  :#,#s/velho/novo/g   onde #,# s�o os n�meros das duas linhas.
+     Digite  :%s/velho/novo/g     para mudar todas as ocorr�ncias no arquivo
+                                  inteiro.
+     Digite  :%s/velho/novo/gc    para mudar todas as ocorr�ncias no arquivo
+                                  inteiro, com a op��o de confirmar cada
+				  substitui��o.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              RESUMO DA LI��O 4
+
+
+  1.    CTRL-G  mostra em que ponto do arquivo est� e o estado dele.
+             G  move para o fim do arquivo.
+     n�mero  G  move para a linha com esse n�mero.
+            gg  move para a primeira linha.
+
+  2. Digitando  /  seguido por uma express�o procura � FRENTE por ela.
+     Digitando  ?  seguido por uma express�o procura pela express�o de TR�S
+     PARA FRENTE.
+     Ap�s uma busca, digite n para achar a pr�xima ocorr�ncia na mesma dire��o
+     ou N para procurar na dire��o oposta.
+     CTRL-O leva a posi��es antigas e CTRL-I a posi��es mais recentes.
+
+  3. Digitando  %  enquanto o cursor est� sobre um (,),[,],{, ou } localiza
+     o par que casa com ele.
+
+  4. Para substituir:
+       o primeiro 'velho' de uma linha por 'novo' digite   :s/velho/novo
+       todos os 'velho' em uma linha por 'novo' digite     :s/velho/novo/g
+       express�es entre dois n�meros (#) de linhas digite  :#,#s/velho/novo
+       todas as ocorr�ncias no arquivo digite              :%s/velho/novo/g
+     Para confirmar cada substitui��o adicione 'c'         :%s/velho/novo/gc
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		 Li��o 5.1: COMO EXECUTAR UM COMANDO EXTERNO
+
+
+       ** Digite  :!  seguido por um comando externo para execut�-lo. **
+
+  1. Digite o familiar comando  :  para levar o cursor ao rodap� da tela. Isso
+     o permite entrar um comando.
+
+  2. Agora digite o caractere  !  (ponto de exclama��o). Isso o permite
+     executar qualquer comando do shell.
+
+  3. Como um exemplo digite  ls  seguindo o  !  e ent�o tecle <ENTER>. Isto
+     mostrar� uma listagem do seu diret�rio, como se voc� estivesse no
+     prompt do shell. Ou use  :!dir se ls n�o funcionar.
+
+NOTA:  � poss�vel executar qualquer comando externo dessa maneira, inclusive
+       com argumentos.
+
+NOTA:  Todos os comandos  :  devem ser finalizados teclando-se <ENTER>
+       Daqui em diante n�o mencionaremos isso todas as vezes.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		    Li��o 5.2: MAIS SOBRE SALVAR ARQUIVOS
+
+     ** Para salvar as altera��es no texto, digite  :w NOMEDOARQUIVO. **
+
+
+  1. Digite  :!dir  ou  :!ls para ter uma listagem de seu diret�rio.
+     Voc� j� deve saber que precisa teclar <ENTER> depois disso.
+
+  2. Escolha um nome de arquivo que ainda n�o exista, como TESTE.
+
+  3. Agora digite:   :w TESTE  (onde TESTE � o nome que voc� escolheu.)
+
+  4. Isto salva o arquivo inteiro  (o Vim Tutor) com o nome TESTE.
+     Para verificar isso, digite  :!ls de novo para ver seu diret�rio.
+
+NOTA: Se sair do Vim e entrar de novo com o nome do arquivo TESTE,
+      o arquivo deve ser uma c�pia exata do tutorial quando voc� o salvou.
+
+  5. Agora remova o arquivo digitando (MS-DOS):     :!del TESTE
+                                   ou (Unix):       :!rm TESTE
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		 Li��o 5.3: SELECIONAR O TEXTO A SER SALVO
+
+  ** Para salvar parte de um arquivo, digite  v  movimento  :w NOMEDOARQUIVO **
+
+  1. Mova o cursor para esta linha.
+
+  2. Pressione  v  e mova o cursor para o quinto item abaixo. Note que o texto
+     � real�ado.
+
+  3. Pressione o caractere  :  e note que aparecer�  :'<,'>  no lado inferior
+     da tela.
+
+  4. Digite  w TESTE , sendo TESTE um nome de arquivo que n�o existe ainda.
+     Certifique-se de ver  :'<,'>w TESTE  antes de pressionar <ENTER>.
+
+  5. O Vim salvar� as linhas selecionadas no arquivo TESTE. Use  :!dir  ou
+     !:ls para v�-lo. N�o o apague ainda! N�s o usaremos na pr�xima li��o.
+
+NOTA:  Pressionar  v  inicia o modo Visual de sele��o.  Voc� pode mover o
+cursor pela tela para tornar a sele��o maior ou menor. Pode, ent�o, usar um
+operador para executar alguma a��o. Por exemplo,  d  apaga o texto.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		  Li��o 5.4: RECUPERAR E UNIR ARQUIVOS
+
+    ** Para inserir o conte�do de um arquivo, digite  :r NOMEDOARQUIVO **
+
+
+  1. Posicione o cursor logo acima desta linha.
+
+NOTA:  Depois de executar o Passo 2 voc� ver� a Li��o 5.3. Ent�o DES�A o
+       cursor para ver esta li��o novamente.
+
+  2. Agora recupere o arquivo TESTE usando o comando  :r TESTE  onde TESTE � o
+     nome do arquivo.
+     O arquivo recuperado � colocado abaixo da linha atual do cursor.
+
+  3. Para verificar que o arquivo foi recuperado, volte com o cursor e verifique
+     que agora existem duas c�pias da Li��o 5.3, a original e a vers�o do 
+     arquivo.
+
+NOTA: Voc� tamb�m pode ler a sa�da de um comando externo. Por exemplo,  :r !ls
+      l� a sa�da do comando ls e coloca o resultado abaixo do cursor.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 5 
+
+
+  1.  :!comando  executa um comando externo.
+
+      Alguns exemplos �teis s�o:
+         (MS-DOS)         (UNIX)
+	  :!dir            :!ls          -  lista conte�do do diret�rio.
+          :!del ARQUIVO    :!rm ARQUIVO  -  remove ARQUIVO.
+
+  2. :w ARQUIVO  salva o atual arquivo do Vim para o disco com o nome ARQUIVO.
+
+  3. v  movimento  :w ARQUIVO  salva as linhas Visualmente selecionadas em
+     ARQUIVO.
+
+  4. :r ARQUIVO  recupera ARQUIVO do disco e o insere dentro do arquivo atual
+     na posi��o do cursor.
+
+  5. :r !dir  l� a sa�da do comando dir e coloca o resultado abaixo da posi��o
+     atual do cursor.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Li��o 6.1: O COMANDO ABRIR
+
+   ** Digite  o  para abrir uma linha em baixo do cursor e ir para o modo de
+      Inser��o. ** 
+
+  1. Mova o cursor para a linha abaixo marcada com --->.
+
+  2. Digite  o  (min�sculo) para abrir uma linha ABAIXO do cursor e ir para o
+     modo de Inser��o. 
+
+  3. Agora digite algum texto e pressione <ESC> para sair do modo de
+     Inser��o.
+
+---> Ap�s teclar  o  o cursor � colocado na linha aberta no modo de Inser��o.
+
+  4. Para abrir uma linha ACIMA do cursor, simplesmente tecle um  O  mai�sculo,
+     em vez de um  o  min�sculo. Tente isso na linha abaixo.
+
+---> Abra uma linha acima desta teclando O enquanto o cursor est� nesta linha.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       	               Li��o 6.2: O COMANDO ADICIONAR
+
+	    ** Digite  a  para inserir texto DEPOIS do cursor. **
+
+  1. Mova o cursor para o in�cio da linha marcada com ---> .
+
+  2. Pressione  e  at� o cursor ficar sobre o final de li .
+
+  3. Digite um  a  (min�sculo) para adicionar texto DEPOIS do caractere sob o
+     cursor.
+
+  4. Complete a palavra conforme a linha abaixo. Pressione <ESC> para sair do
+     modo de Inser��o.
+
+  5. Use  e  para mover para a pr�xima palavra incompleta  repita os passos 3
+     e 4.
+
+---> Esta lin o permite pratic a adi� de texto a uma linha.
+---> Esta linha o permite praticar a adi��o de texto a uma linha.
+
+NOTA: a, i e A levam ao mesmo modo de Inser��o, a �nica diferen�a � onde os
+      caracteres s�o inseridos.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	         Li��o 6.3: UMA OUTRA VERS�O DO SUBSTITUIR
+
+      ** Digite um R mai�sculo para substituir mais de um caractere. **
+
+
+  1. Mova o cursor para a primeira linha abaixo marcada com --->. Mova o
+     cursor para o in�cio do primeiro  xxx .
+  
+  2. Agora pressione  R  e digite os n�meros que est�o abaixo dele, na segunda
+     linha, para substituir o  xxx .
+
+  3. Pressione <ESC> para sair do modo de Substitui��o. Note que o resto da
+     linha permanece inalterado.
+
+  4. Repita os passos para substituir os  xxx  restantes.
+
+--->  Adicionando 123 a xxx resulta em xxx.
+--->  Adicionando 123 a 456 resulta em 579.
+
+NOTA:  O modo de Substitui��o � como o modo de Inser��o, mas cada caractere
+       digitado apaga um caractere existente.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		       Li��o 6.4: COPIAR E COLAR TEXTO
+
+	** Use o operador  y  para copiar texto e  p  para col�-lo. **
+
+   1. V� � linha marcada com ---> abaixo e posicione o cursor ap�s "a)".
+
+   2. Inicie o modo Visual com  v  e mova o cursor para logo antes de
+      "primeiro".
+
+   3. Digite  y  para copiar o texto selecionado.
+
+   4. Mova o cursor para o fim da pr�xima linha:  j$
+
+   5. Digite  p  para colar o texto. Ent�o, digite:  o segundo <ESC> .
+
+   6. Use o modo Visual para selecionar  " item.", copie-o com  y , mova para
+      o fim da pr�xima linha com  j$  e cole o texto com  p .
+
+--->  a) esse � o primeiro item.
+      b)
+
+NOTA:  Voc� tamb�m pode usar  y  como um operador; por exemplo, yw copia uma
+       palavra.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		      Li��o 6.5: CONFIGURAR PREFER�NCIAS
+
+      ** Configure uma prefer�ncia de modo que uma busca ou substitui��o
+	 ignore se as letras s�o mai�sculas ou min�sculas. **
+
+  1. Procure por 'ignore' entrando:   /ignore <ENTER>
+     Repita v�rias vezes teclando  n .
+
+  2. Configure a op��o 'ic' (Ignore case) digitando:  :set ic
+  
+  3. Agora procure por 'ignore' de novo teclando: n
+     Repita v�rias vezes.
+  
+  4. Configure as op��es 'hlsearch' e 'incsearch':  :set hls is
+  
+  5. Agora entre com o comando buscar de novo, e veja o que acontece:
+     /ignore
+  
+  6. Para desabilitar a diferencia��o entre mai�sculas e min�sculas:
+     :set noic
+
+NOTA:  Para remover o realce dos termos localizados entre:  :nohlsearch
+NOTA:  Se quiser ignorar a diferen�a entre mai�sculas e min�sculas em apenas
+       uma pesquisa, use  \c  no comando:  /ignore\c <ENTER>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 6
+
+  1. Digite  o  para abrir uma linha ABAIXO do cursor e iniciar o modo de
+     Inser��o.
+     Digite  O  para abrir uma linha ACIMA da linha onde o cursor est�.
+
+  2. Digite  a  para adicionar texto DEPOIS do caractere onde est� o cursor.
+     Digite  A  para adicionar texto ao fim da linha.
+
+  3. O comando  e  move o cursor para o fim de uma palavra.
+
+  4. O operador  y  copia texto,  p  cola o texto copiado.
+
+  5. Digitando  R  entra-se no modo de Substitui��o at� que <ESC> seja
+     pressionado.
+
+  6. Digitando  ":set xxx" modifica-se a op��o "xxx". Algumas op��es s�o:
+         'ic'  'ignorecase'    ignora diferen�a entre mai�sculas/min�sculas
+	 'is'  'incsearch'     realiza a busca enquanto se digita
+	 'hls' 'hlsearch'      real�a todos os trechos localizados
+     Voc� tanto pode usar o nome curto quanto o nome longo da op��o.
+
+  7. Adicione o prefixo "no" para desabilitar uma op��o:  :set noic
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			   LI��O 7.1: OBTENDO AJUDA
+
+		 ** Use o sistema de ajuda do pr�prio Vim **
+
+  O Vim possui sistema de ajuda abrangente. Para come�ar, tente algum
+  desses tr�s:
+        - pressione a tecla <HELP> (se voc� tiver uma)
+        - pressione a tecla <F1>   (se voc� tiver uma)
+        - digite      :help <ENTER>
+
+  Leia o texto da ajuda para aprender como o sistema de ajuda funciona.
+  Digite  CTRL-W CTRL-W  para pular de uma janela a outra.
+  Digite  :q <ENTER>     para fechar a janela da ajuda.
+
+  Voc� pode encontrar ajuda sobre qualquer assunto, fornecendo um argumento 
+  para o comando ":help". Tente isto (n�o se esque�a de pressionar <ENTER>):
+
+       :help w
+       :help c_CTRL-D
+       :help insert-index
+       :help user-manual
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		 Li��o 7.2: CRIAR UM SCRIPT DE INICIALIZA��O
+
+		       ** Habilite recursos do Vim **
+
+  O Vim tem muito mais recursos do que o Vi, mas na sua maioria eles s�o
+  desabilitados por padr�o.  Para usar mais recursos, voc� tem que criar um
+  arquivo "vimrc".
+
+  1. Comece a editar o arquivo "vimrc". Isso depende do sistema:
+         :e ~/.vimrc              para Unix
+         :e ~/_vimrc              para MS-Windows
+
+  2. Agora, leia o conte�do do arquivo "vimrc" de exemplo:
+         :r $VIMRUNTIME/vimrc_example.vim
+
+  3. Salve o arquivo com:
+         :w
+
+  Da pr�xima vez que o Vim for iniciado, ele usar� realce de sintaxe. Voc�
+  pode adicionar suas configura��es preferidas para esse arquivo "vimrc". Para
+  maiores informa��es, digite:  :help vimrc-intro
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			    Li��o 7.3: COMPLETA��O
+
+	   ** Completa��o da linha de comando com CTRL-D e <TAB> **
+
+   1. Certifique-se de que o Vim n�o est� no modo compat�vel:  :set nocp
+
+   2. Veja quais arquivos existem no diret�rio:  :!ls  ou  :!dir
+
+   3. Digite o in�cio de um comando:  :e
+
+   4. Pressione  CTRL-D  e o Vim mostrar� a lista dos comandos iniciados
+      com "e".
+
+   5. Pressione  <TAB>  e o Vim completar� o nome do comando para ":edit".
+
+   6. Agora, adicione um espa�o e o in�cio do nome de um arquivo existente:
+      :edit ARQ
+
+   7. Pressione <TAB>.  O Vim completar� o nome (se ele for �nico).
+
+NOTA:  A completa��o funciona com muitos comandos. Basta pressionar CTRL-D e
+<TAB>. Isso � especialmente �til para  :help .
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			      RESUMO DA LI��O 7
+
+
+  1. Digite  :help ou pressione <F1> ou <Help>  para abrir a janela de ajuda.
+
+  2. Digite  :help cmd  para achar a ajuda sobre  cmd .
+
+  3. Digite  CTRL-W CTRL-W  para pular de uma janela a outra.
+
+  4. Digite  :q  para fechar a janela de ajuda.
+
+  5. Crie um script de inicializa��o vimrc para ativar automaticamente as suas
+     configura��es preferidas.
+
+  6. Quando pressionar um comando  : , pressione CTRL-D para ver as possibilidades 
+  de completa��o. Pressione <TAB> para us�-la.
+
+
+
+  
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Isto conclui o tutorial do Vim, uma breve apresenta��o do editor Vim,
+  somente o bastante para que voc� possa usar o editor com facilidade.
+  Ele est� longe de ser completo, uma vez que o Vim possui muitos, muitos mais
+  comandos. O pr�ximo passo � ler o manual:  ":help user-manual".
+
+  Livro recomendado em Portugu�s sobre o Vim:
+       O editor de texto Vim - de S�rgio Luiz Ara�jo da Silva et al.
+       http://code.google.com/p/vimbook/
+
+  Para futura leitura e estudo, este livro � recomendado:
+       Vim - Vi Improved - de Steve Oualline
+       Editora: New Riders
+  Este � o primeiro livro completamente dedicado ao Vim. Especialmente �til
+  para iniciantes, com muitos exemplos e ilustra��es.
+  Veja https://iccf-holland.org/click5.html
+
+  Esse livro � mais antigo e mais sobre o Vi do que sobre o Vim, mas tamb�m �
+  recomendado:
+       Learning the Vi Editor - de Linda Lamb
+       Editora: O'Reilly & Associates Inc.
+  Este � um bom livro para aprender quase tudo o que voc� quer fazer com o Vi.
+  A sexta edi��o tamb�m inclui informa��es sobre o Vim.
+
+  Este tutorial foi escrito por Michael C. Pierce e Robert K. Ware,
+  Colorado School of Mines, usando id�ias fornecidas por Charles Smith,
+  Colorado State University.  E-mail: bware@mines.colorado.edu.
+
+  Modificado para o Vim por Bram Moolenaar.
+
+  Vers�o 1.4 traduzida para o portugu�s por Marcelo Drudi Miranda, Escola
+  Polit�cnica da Universidade de S�o Paulo.
+
+  Revis�o e atualiza��o da tradu��o para a vers�o 1.7 por Jakson Aquino,
+  Universidade Federal do Cear�: E-mail: jalvesaq@gmail.com
+
+  Nova revis�o e atualiza��o para a vers�o 1.8 por Ron� Gon�alves,
+  Universidade Federal de Uberl�ndia.
+
+  Last Change: 2017 Feb 11
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
