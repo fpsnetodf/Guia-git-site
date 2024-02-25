@@ -4,3 +4,4 @@ git log # Mostra o historico dos comites
 git log # Para vé as versoes do codigo
 git checkout e os 6 primeiros digitos da versão que pretende migrar
 git checkout master # Para voktar para a ultima versão comitada
+git branch nome-da-branch # Cria uma branch com o nome nome-da-branch
