@@ -1,3 +1,6 @@
 git add .
 git commit -m 'msg'
 git log # Mostra o historico dos comites
+git log # Para vé as versoes do codigo
+git checkout e os 6 primeiros digitos da versão que pretende migrar
+git checkout master # Para voktar para a ultima versão comitada
