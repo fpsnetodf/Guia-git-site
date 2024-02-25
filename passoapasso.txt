@@ -1,2 +1,3 @@
 git add .
 git commit -m 'msg'
+git log # Mostra o historico dos comites
