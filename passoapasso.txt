@@ -10,3 +10,4 @@ git branch sem-nome-da-branch # Mostra quais branchs existem
 git branch -m main # Renomeia a branch usando a flag -m e novo-nome
 git branch # Sonente, mostra as branchs existentes
 git merge nome-branch uni a branch com a master
+git merge nome-da-branch # Atualiza as branch 
