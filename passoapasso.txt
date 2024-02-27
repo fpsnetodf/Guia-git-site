@@ -12,3 +12,6 @@ git branch # Sonente, mostra as branchs existentes
 git merge nome-branch uni a branch com a master
 git merge nome-da-branch # Atualiza as branch 
 git checkout -b nome-da-branch # essa flag -b serve para cria e mugrar aurmtomaticamente para a bremanch que foi criada
+git remote add origin # Conecta ao repositorio 
+git push # Envia para o github
+git clone # Pega uma copia do repositorio do github
